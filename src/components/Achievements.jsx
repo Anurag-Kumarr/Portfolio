@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Award, Lock, ExternalLink } from 'lucide-react';
 
 // ✅ Import your certificate images
-import cert1 from '../assets/cert1.png';
-import cert2 from '../assets/cert2.png';
-import cert3 from '../assets/cert3.png';
+import cert1 from '../assets/Cert1.png';
+import cert2 from '../assets/Cert2.png';
+import cert3 from '../assets/Cert3.png';
 
 // ✅ ADD THIS (was missing before)
 const certificates = [
