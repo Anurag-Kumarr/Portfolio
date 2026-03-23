@@ -47,7 +47,7 @@ const Achievements = () => {
         className="mb-12"
       >
         <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-white mb-4">
-          <span className="text-[#ff007f]">04.</span> Certificates
+          <span className="text-[#ff007f]">04.</span> Certifications
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-[#ff007f] to-transparent"></div>
         <p className="font-mono text-gray-400 mt-4">
