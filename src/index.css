@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-dark-900 text-white overflow-x-hidden;
+    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-lg;
+  }
+  .glass-card {
+    @apply bg-dark-800/60 backdrop-blur-lg border border-neon-blue/20 rounded-xl hover:border-neon-blue/50 transition-all duration-300 shadow-[0_0_15px_rgba(0,243,255,0.05)] hover:shadow-[0_0_20px_rgba(0,243,255,0.2)];
+  }
+  .neon-text-blue {
+    text-shadow: 0 0 10px rgba(0,243,255,0.8), 0 0 20px rgba(0,243,255,0.4);
+  }
+  .neon-text-purple {
+    text-shadow: 0 0 10px rgba(188,19,254,0.8), 0 0 20px rgba(188,19,254,0.4);
+  }
+  .neon-border-blue {
+    box-shadow: 0 0 10px rgba(0,243,255,0.5), inset 0 0 10px rgba(0,243,255,0.5);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-dark-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-neon-purple rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neon-blue;
+}
